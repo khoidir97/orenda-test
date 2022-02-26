@@ -1,0 +1,13 @@
+# docker untuk test orenda
+version: "3.1"
+
+services:
+    db:
+        container_name: db-orenda-test
+        image: postgres:latest
+        environment:
+            POSTGRES_PASSWORD: 123456
+            POSTGRES_USER: root
+            POSTGRES_DB: orenda
+        ports:
+            - 5432:5432
