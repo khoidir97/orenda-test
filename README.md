@@ -1,41 +1,37 @@
 <h1 >Rest API Laravel</h1>
 <br /> Description project:
 This program built for orenda employer test.<br />
-How running this program:<br />
+How to running this program:<br />
 
 1.  clone from github by following this syntax
     git clone https://github.com/khoidir97/orenda-test or download ZIP
-2.  import database "orendaTest/public.sql" into your pgsql 
-3.  running program: php artisan serve
+2.  import database "orendaTest/public.sql" into your pgsql
+3.  Database and Redis in docker
+4.  install the package : composer update
+4.  running program: php artisan serve
 
 # Database and Redis 
  
-## 1. Setting Up 
+## 1. Open directory project "orenda-test" 
  
-Init Container 
+Jalankan sintaks ini:
  
 docker-compose up -d 
  
- 
-Destroy Container 
- 
-docker-compose down 
- 
- 
-Stop Container 
- 
-docker-compose stop 
- 
- 
-Start Container 
+Start Container : 
  
 docker-compose start -d 
+
+Stop Container :
  
+docker-compose stop 
+
+
+===============================================================
+
  
 <br/>
 
-# Migarate Database
-php artisan migrate
 
 Endpoints:
 - Description API:
